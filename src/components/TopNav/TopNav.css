@@ -1,0 +1,52 @@
+.selectGroup {
+    padding: 8px;
+    width: auto;
+}
+.selectGroup1{
+    padding: 8px;
+    width: auto;
+    margin-left: 3px;
+}
+
+.displayButton {
+    position: relative;
+}
+
+.dropOnClick{
+    position: absolute;
+    width: 250px;
+    background-color: #dfdfe0;
+    border-radius: 10px;
+    margin-top: 10px;
+    z-index: 10;
+    
+}
+
+
+.dropOnClick>* {
+    width: 100%;
+}
+
+.btn {
+    background: #ffffff;
+    border: 2px solid #c1c1c1;
+    border-radius: 5px;
+}
+
+.selectStyle {
+    width: 100px;
+    border-radius: 5px;
+    background: white;
+    padding: 3px 6px;
+    margin-left: 60px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .dropOnClick {
+        width: 100%;
+        /* Adjust the width for smaller screens */
+        max-width: 300px;
+        /* Set a maximum width if needed */
+    }
+}

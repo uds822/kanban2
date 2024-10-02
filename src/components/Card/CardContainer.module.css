@@ -1,0 +1,71 @@
+.cardBoard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cardContainer {
+  position: relative;
+  width: calc(33.33% - 16px);
+  border-radius: 8px;
+  background-color: white;
+  font-size: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.cardBody {
+  font-size: 13px;
+  color: #666;
+}
+
+.cardTags {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f4f5f8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.profileImage {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  .cardContainer {
+    width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    width: calc(100% - 16px);
+  }
+}
